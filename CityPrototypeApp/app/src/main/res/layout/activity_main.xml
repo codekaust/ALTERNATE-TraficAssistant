@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_road_map">
+
+    <RelativeLayout
+            android:id="@+id/int_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <View
+                android:id="@+id/iv_light_up_int_1_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_1_1"
+                android:layout_alignRight="@+id/iv_light_down_int_1_1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_1_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_1_1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_1_1"
+                android:layout_toRightOf="@+id/iv_light_left_int_1_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_1_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_1"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_1_1"
+                android:layout_toRightOf="@+id/iv_light_down_int_1_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_1_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_1_2"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <View
+                android:id="@+id/iv_light_up_int_1_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_1_3"
+                android:layout_alignRight="@+id/iv_light_down_int_1_3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_1_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_1_3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_1_3"
+                android:layout_toRightOf="@+id/iv_light_left_int_1_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_1_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_3"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_1_3"
+                android:layout_toRightOf="@+id/iv_light_down_int_1_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_1_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_1_3"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <View
+                android:id="@+id/iv_light_up_int_1_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_1_4"
+                android:layout_alignRight="@+id/iv_light_down_int_1_4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_1_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_1_4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_1_4"
+                android:layout_toRightOf="@+id/iv_light_left_int_1_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_1_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_4"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_1_4"
+                android:layout_toRightOf="@+id/iv_light_down_int_1_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_1_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_1_1"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <View
+                android:id="@+id/iv_light_up_int_1_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_1_2"
+                android:layout_alignRight="@+id/iv_light_down_int_1_2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_1_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_1_2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_1_2"
+                android:layout_toRightOf="@+id/iv_light_left_int_1_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_1_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_2"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_1_2"
+                android:layout_toRightOf="@+id/iv_light_down_int_1_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_1_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_1_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/int_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/int_1_1">
+
+        <View
+                android:id="@+id/iv_light_up_int_2_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_2_1"
+                android:layout_alignRight="@+id/iv_light_down_int_2_1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_2_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_2_1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_2_1"
+                android:layout_toRightOf="@+id/iv_light_left_int_2_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_2_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_1"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_2_1"
+                android:layout_toRightOf="@+id/iv_light_down_int_2_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_2_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_1_2"
+            app:layout_constraintTop_toBottomOf="@+id/int_1_3">
+
+        <View
+                android:id="@+id/iv_light_up_int_2_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_2_3"
+                android:layout_alignRight="@+id/iv_light_down_int_2_3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_2_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_2_3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_2_3"
+                android:layout_toRightOf="@+id/iv_light_left_int_2_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_2_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_3"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_2_3"
+                android:layout_toRightOf="@+id/iv_light_down_int_2_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_2_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_2_3"
+            app:layout_constraintTop_toBottomOf="@+id/int_1_4">
+
+        <View
+                android:id="@+id/iv_light_up_int_2_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_2_4"
+                android:layout_alignRight="@+id/iv_light_down_int_2_4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_2_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_2_4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_2_4"
+                android:layout_toRightOf="@+id/iv_light_left_int_2_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_2_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_4"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_2_4"
+                android:layout_toRightOf="@+id/iv_light_down_int_2_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_2_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_2_1"
+            app:layout_constraintTop_toBottomOf="@+id/int_1_2">
+
+        <View
+                android:id="@+id/iv_light_up_int_2_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_2_2"
+                android:layout_alignRight="@+id/iv_light_down_int_2_2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_2_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_2_2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_2_2"
+                android:layout_toRightOf="@+id/iv_light_left_int_2_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_2_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_2"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_2_2"
+                android:layout_toRightOf="@+id/iv_light_down_int_2_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_2_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_2_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/int_3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/int_2_1">
+
+        <View
+                android:id="@+id/iv_light_up_int_3_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_3_1"
+                android:layout_alignRight="@+id/iv_light_down_int_3_1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_3_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_3_1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_3_1"
+                android:layout_toRightOf="@+id/iv_light_left_int_3_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_3_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_1"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_3_1"
+                android:layout_toRightOf="@+id/iv_light_down_int_3_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_3_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_2_2"
+            app:layout_constraintTop_toBottomOf="@+id/int_2_3">
+
+        <View
+                android:id="@+id/iv_light_up_int_3_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_3_3"
+                android:layout_alignRight="@+id/iv_light_down_int_3_3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_3_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_3_3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_3_3"
+                android:layout_toRightOf="@+id/iv_light_left_int_3_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_3_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_3"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_3_3"
+                android:layout_toRightOf="@+id/iv_light_down_int_3_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_3_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_3_3"
+            app:layout_constraintTop_toBottomOf="@+id/int_2_4">
+
+        <View
+                android:id="@+id/iv_light_up_int_3_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_3_4"
+                android:layout_alignRight="@+id/iv_light_down_int_3_4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_3_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_3_4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_3_4"
+                android:layout_toRightOf="@+id/iv_light_left_int_3_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_3_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_4"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_3_4"
+                android:layout_toRightOf="@+id/iv_light_down_int_3_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_3_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_3_1"
+            app:layout_constraintTop_toBottomOf="@+id/int_2_2">
+
+        <View
+                android:id="@+id/iv_light_up_int_3_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_3_2"
+                android:layout_alignRight="@+id/iv_light_down_int_3_2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_3_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_3_2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_3_2"
+                android:layout_toRightOf="@+id/iv_light_left_int_3_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_3_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_2"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_3_2"
+                android:layout_toRightOf="@+id/iv_light_down_int_3_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_3_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_3_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+            android:id="@+id/int_4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/int_3_1">
+
+        <View
+                android:id="@+id/iv_light_up_int_4_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_4_1"
+                android:layout_alignRight="@+id/iv_light_down_int_4_1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_4_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_4_1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_4_1"
+                android:layout_toRightOf="@+id/iv_light_left_int_4_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_4_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_1"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_4_1"
+                android:layout_toRightOf="@+id/iv_light_down_int_4_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_4_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_3_2"
+            app:layout_constraintTop_toBottomOf="@+id/int_3_3">
+
+        <View
+                android:id="@+id/iv_light_up_int_4_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_4_3"
+                android:layout_alignRight="@+id/iv_light_down_int_4_3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_4_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_4_3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_4_3"
+                android:layout_toRightOf="@+id/iv_light_left_int_4_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_4_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_3"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_4_3"
+                android:layout_toRightOf="@+id/iv_light_down_int_4_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_4_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_4_3"
+            app:layout_constraintTop_toBottomOf="@+id/int_3_4">
+
+        <View
+                android:id="@+id/iv_light_up_int_4_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_4_4"
+                android:layout_alignRight="@+id/iv_light_down_int_4_4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_4_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_4_4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_4_4"
+                android:layout_toRightOf="@+id/iv_light_left_int_4_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_4_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_4"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_4_4"
+                android:layout_toRightOf="@+id/iv_light_down_int_4_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_4_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_4_1"
+            app:layout_constraintTop_toBottomOf="@+id/int_3_2">
+
+        <View
+                android:id="@+id/iv_light_up_int_4_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_4_2"
+                android:layout_alignRight="@+id/iv_light_down_int_4_2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_4_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_4_2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_4_2"
+                android:layout_toRightOf="@+id/iv_light_left_int_4_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_4_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_2"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_4_2"
+                android:layout_toRightOf="@+id/iv_light_down_int_4_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_4_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_4_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+            android:id="@+id/int_5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/int_4_1">
+
+        <View
+                android:id="@+id/iv_light_up_int_5_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_5_1"
+                android:layout_alignRight="@+id/iv_light_down_int_5_1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_5_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_5_1"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_5_1"
+                android:layout_toRightOf="@+id/iv_light_left_int_5_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_5_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_1"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_5_1"
+                android:layout_toRightOf="@+id/iv_light_down_int_5_1"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_5_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_4_2"
+            app:layout_constraintTop_toBottomOf="@+id/int_4_3">
+
+        <View
+                android:id="@+id/iv_light_up_int_5_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_5_3"
+                android:layout_alignRight="@+id/iv_light_down_int_5_3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_5_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_5_3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_5_3"
+                android:layout_toRightOf="@+id/iv_light_left_int_5_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_5_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_3"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_5_3"
+                android:layout_toRightOf="@+id/iv_light_down_int_5_3"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_5_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_5_3"
+            app:layout_constraintTop_toBottomOf="@+id/int_4_4">
+
+        <View
+                android:id="@+id/iv_light_up_int_5_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_5_4"
+                android:layout_alignRight="@+id/iv_light_down_int_5_4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_5_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_5_4"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_5_4"
+                android:layout_toRightOf="@+id/iv_light_left_int_5_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_5_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_4"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_5_4"
+                android:layout_toRightOf="@+id/iv_light_down_int_5_4"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_5_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/int_5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toEndOf="@+id/int_5_1"
+            app:layout_constraintTop_toBottomOf="@+id/int_4_2">
+
+        <View
+                android:id="@+id/iv_light_up_int_5_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@+id/iv_light_down_int_5_2"
+                android:layout_alignRight="@+id/iv_light_down_int_5_2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_down_int_5_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_left_int_5_2"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/iv_light_left_int_5_2"
+                android:layout_toRightOf="@+id/iv_light_left_int_5_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_right_int_5_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_2"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/iv_light_down_int_5_2"
+                android:layout_toRightOf="@+id/iv_light_down_int_5_2"
+                android:background="@drawable/icon_red_light" />
+
+        <View
+                android:id="@+id/iv_light_left_int_5_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_light_up_int_5_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/icon_red_light" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
