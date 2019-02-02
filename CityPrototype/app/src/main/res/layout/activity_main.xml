@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
+<layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -34,7 +34,7 @@
             android:id="@+id/tv_to"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="10dp"
             android:text="To"
             android:textSize="30sp"
             app:layout_constraintStart_toEndOf="@+id/et_start_j"
@@ -42,47 +42,55 @@
 
         <EditText
             android:id="@+id/et_start_i"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:hint="i"
-            android:textSize="30sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/tv_from"
             app:layout_constraintStart_toEndOf="@+id/tv_from"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:text="@string/et_start_i"
+            android:gravity="center_horizontal"/>
 
         <EditText
             android:id="@+id/et_start_j"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="8dp"
             android:hint="j"
-            android:textSize="30sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/et_start_i"
             app:layout_constraintStart_toEndOf="@+id/et_start_i"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:text="@string/et_start_j"
+            android:gravity="center_horizontal"/>
 
         <EditText
             android:id="@+id/et_end_i"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:hint="i"
-            android:textSize="30sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/tv_to"
             app:layout_constraintStart_toEndOf="@+id/tv_to"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:text="@string/et_end_i"
+            android:gravity="center_horizontal"/>
 
         <EditText
             android:id="@+id/et_end_j"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="8dp"
             android:hint="j"
-            android:textSize="30sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/et_end_i"
             app:layout_constraintStart_toEndOf="@+id/et_end_i"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:text="@string/et_end_j"
+            android:gravity="center_horizontal"/>
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/root_road_map"
@@ -96,7 +104,7 @@
 
             <RelativeLayout
                 android:id="@+id/int_1_1"
-                android:layout_width="wrap_content"
+                android:layout_width="93dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 app:layout_constraintStart_toStartOf="parent"
@@ -162,6 +170,8 @@
                     android:text="@{matrix[0][0].getC4}"
 
                     android:textColor="@android:color/white" />
+
+
 
             </RelativeLayout>
 
@@ -536,7 +546,7 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][3].getC1}"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -552,7 +562,7 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_2_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][3].getC2}"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -566,7 +576,7 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_2_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][3].getC3}"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -581,7 +591,7 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][3].getC4}"
                     android:textColor="@android:color/white" />
 
             </RelativeLayout>
@@ -606,7 +616,7 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][1].getC1}"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -622,7 +632,7 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_2_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][1].getC2}"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -636,7 +646,7 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_2_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][1].getC3}"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -651,10 +661,11 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[1][1].getC4}"
                     android:textColor="@android:color/white" />
 
             </RelativeLayout>
+
 
 
             <RelativeLayout
@@ -663,7 +674,6 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_2_1">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_3_1"
                     android:layout_width="25dp"
@@ -676,9 +686,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][0].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_3_1"
                     android:layout_width="25dp"
@@ -692,9 +701,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_3_1"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][0].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_3_1"
                     android:layout_width="25dp"
@@ -706,9 +714,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_3_1"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][0].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_3_1"
                     android:layout_width="25dp"
@@ -721,19 +728,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][0].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_3_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_2_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_2_3">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_3_3"
                     android:layout_width="25dp"
@@ -746,9 +749,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][2].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_3_3"
                     android:layout_width="25dp"
@@ -762,9 +764,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_3_3"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][2].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_3_3"
                     android:layout_width="25dp"
@@ -776,9 +777,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_3_3"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][2].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_3_3"
                     android:layout_width="25dp"
@@ -791,19 +791,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][2].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_3_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_3_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_2_4">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_3_4"
                     android:layout_width="25dp"
@@ -816,9 +812,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][3].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_3_4"
                     android:layout_width="25dp"
@@ -832,9 +827,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_3_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][3].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_3_4"
                     android:layout_width="25dp"
@@ -846,9 +840,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_3_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][3].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_3_4"
                     android:layout_width="25dp"
@@ -861,19 +854,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][3].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_3_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_3_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_2_2">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_3_2"
                     android:layout_width="25dp"
@@ -886,9 +875,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][1].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_3_2"
                     android:layout_width="25dp"
@@ -902,9 +890,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_3_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][1].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_3_2"
                     android:layout_width="25dp"
@@ -916,9 +903,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_3_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][1].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_3_2"
                     android:layout_width="25dp"
@@ -931,10 +917,11 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[2][1].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
+
+
 
 
             <RelativeLayout
@@ -943,7 +930,6 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_3_1">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_4_1"
                     android:layout_width="25dp"
@@ -956,9 +942,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][0].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_4_1"
                     android:layout_width="25dp"
@@ -972,9 +957,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_4_1"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][0].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_4_1"
                     android:layout_width="25dp"
@@ -986,9 +970,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_4_1"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][0].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_4_1"
                     android:layout_width="25dp"
@@ -1001,19 +984,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][0].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_4_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_3_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_3_3">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_4_3"
                     android:layout_width="25dp"
@@ -1026,9 +1005,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][2].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_4_3"
                     android:layout_width="25dp"
@@ -1042,9 +1020,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_4_3"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][2].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_4_3"
                     android:layout_width="25dp"
@@ -1056,9 +1033,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_4_3"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][2].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_4_3"
                     android:layout_width="25dp"
@@ -1071,19 +1047,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][2].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_4_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_4_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_3_4">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_4_4"
                     android:layout_width="25dp"
@@ -1096,9 +1068,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][3].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_4_4"
                     android:layout_width="25dp"
@@ -1112,9 +1083,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_4_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][3].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_4_4"
                     android:layout_width="25dp"
@@ -1126,9 +1096,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_4_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][3].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_4_4"
                     android:layout_width="25dp"
@@ -1141,19 +1110,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][3].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_4_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_4_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_3_2">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_4_2"
                     android:layout_width="25dp"
@@ -1166,9 +1131,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][1].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_4_2"
                     android:layout_width="25dp"
@@ -1182,9 +1146,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_4_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][1].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_4_2"
                     android:layout_width="25dp"
@@ -1196,9 +1159,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_4_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][1].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_4_2"
                     android:layout_width="25dp"
@@ -1211,10 +1173,11 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[3][1].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
+
+
 
 
             <RelativeLayout
@@ -1223,7 +1186,6 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_4_1">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_5_1"
                     android:layout_width="25dp"
@@ -1236,9 +1198,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][0].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_5_1"
                     android:layout_width="25dp"
@@ -1252,9 +1213,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_5_1"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][0].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_5_1"
                     android:layout_width="25dp"
@@ -1266,9 +1226,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_5_1"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][0].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_5_1"
                     android:layout_width="25dp"
@@ -1281,19 +1240,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][0].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_5_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_4_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_4_3">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_5_3"
                     android:layout_width="25dp"
@@ -1306,9 +1261,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][2].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_5_3"
                     android:layout_width="25dp"
@@ -1322,9 +1276,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_5_3"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][2].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_5_3"
                     android:layout_width="25dp"
@@ -1336,9 +1289,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_5_3"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][2].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_5_3"
                     android:layout_width="25dp"
@@ -1351,19 +1303,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][2].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_5_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_5_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_4_4">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_5_4"
                     android:layout_width="25dp"
@@ -1376,9 +1324,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][3].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_5_4"
                     android:layout_width="25dp"
@@ -1392,10 +1339,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_5_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][3].getC2}"
                     android:textColor="@android:color/white" />
-
-
                 <TextView
                     android:id="@+id/tv_light_right_int_5_4"
                     android:layout_width="25dp"
@@ -1407,9 +1352,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_5_4"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][3].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_5_4"
                     android:layout_width="25dp"
@@ -1422,19 +1366,15 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][3].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:id="@+id/int_5_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintStart_toEndOf="@+id/int_5_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_4_2">
-
                 <TextView
                     android:id="@+id/tv_light_up_int_5_2"
                     android:layout_width="25dp"
@@ -1447,9 +1387,8 @@
                     android:layout_marginRight="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][1].getC1}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_down_int_5_2"
                     android:layout_width="25dp"
@@ -1463,9 +1402,8 @@
                     android:layout_toRightOf="@+id/tv_light_left_int_5_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][1].getC2}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_right_int_5_2"
                     android:layout_width="25dp"
@@ -1477,9 +1415,8 @@
                     android:layout_toRightOf="@+id/tv_light_down_int_5_2"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][1].getC3}"
                     android:textColor="@android:color/white" />
-
                 <TextView
                     android:id="@+id/tv_light_left_int_5_2"
                     android:layout_width="25dp"
@@ -1492,10 +1429,10 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/circle_red"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@{matrix[4][1].getC4}"
                     android:textColor="@android:color/white" />
-
             </RelativeLayout>
+
 
         </android.support.constraint.ConstraintLayout>
 
