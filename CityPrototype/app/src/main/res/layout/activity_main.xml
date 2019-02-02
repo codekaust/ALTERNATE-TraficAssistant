@@ -4,1413 +4,1503 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/root_road_map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:id="@+id/int_1_1"
+        <TextView
+            android:id="@+id/tv_from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="From"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/root_road_map"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="To"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/et_start_j"
+            app:layout_constraintTop_toTopOf="@+id/tv_from" />
+
+        <EditText
+            android:id="@+id/et_start_i"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:hint="i"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_from"
+            app:layout_constraintStart_toEndOf="@+id/tv_from"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_start_j"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:hint="j"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_start_i"
+            app:layout_constraintStart_toEndOf="@+id/et_start_i"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_end_i"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:hint="i"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_to"
+            app:layout_constraintStart_toEndOf="@+id/tv_to"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_end_j"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:hint="j"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_end_i"
+            app:layout_constraintStart_toEndOf="@+id/et_end_i"
+            android:inputType="number"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/root_road_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tv_light_up_int_1_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_1_1"
-                android:layout_alignRight="@+id/tv_light_down_int_1_1"
+            <RelativeLayout
+                android:id="@+id/int_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tv_light_down_int_1_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_1_1"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_1_1"
-                android:layout_toRightOf="@+id/tv_light_left_int_1_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/tv_light_up_int_1_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_1_1"
+                    android:layout_alignRight="@+id/tv_light_down_int_1_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
 
-            <TextView
-                android:id="@+id/tv_light_right_int_1_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_1"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_1_1"
-                android:layout_toRightOf="@+id/tv_light_down_int_1_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/tv_light_down_int_1_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_1_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_1_1"
+                    android:layout_toRightOf="@+id/tv_light_left_int_1_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
 
-            <TextView
-                android:id="@+id/tv_light_left_int_1_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/tv_light_right_int_1_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_1_1"
+                    android:layout_toRightOf="@+id/tv_light_down_int_1_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_light_left_int_1_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
 
-        <RelativeLayout
-            android:id="@+id/int_1_3"
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_1_2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_1_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_1_3"
+                    android:layout_alignRight="@+id/tv_light_down_int_1_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_1_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_1_3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_1_3"
+                    android:layout_toRightOf="@+id/tv_light_left_int_1_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_1_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_1_3"
+                    android:layout_toRightOf="@+id/tv_light_down_int_1_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_1_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_1_3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_1_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_1_4"
+                    android:layout_alignRight="@+id/tv_light_down_int_1_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_1_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_1_4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_1_4"
+                    android:layout_toRightOf="@+id/tv_light_left_int_1_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_1_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_1_4"
+                    android:layout_toRightOf="@+id/tv_light_down_int_1_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_1_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_1_1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_1_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_1_2"
+                    android:layout_alignRight="@+id/tv_light_down_int_1_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_1_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_1_2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_1_2"
+                    android:layout_toRightOf="@+id/tv_light_left_int_1_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_1_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_1_2"
+                    android:layout_toRightOf="@+id/tv_light_down_int_1_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_1_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_1_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/int_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/int_1_1">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_2_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_2_1"
+                    android:layout_alignRight="@+id/tv_light_down_int_2_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_2_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_2_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_2_1"
+                    android:layout_toRightOf="@+id/tv_light_left_int_2_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_2_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_2_1"
+                    android:layout_toRightOf="@+id/tv_light_down_int_2_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_2_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_1_2"
+                app:layout_constraintTop_toBottomOf="@+id/int_1_3">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_2_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_2_3"
+                    android:layout_alignRight="@+id/tv_light_down_int_2_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_2_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_2_3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_2_3"
+                    android:layout_toRightOf="@+id/tv_light_left_int_2_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_2_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_2_3"
+                    android:layout_toRightOf="@+id/tv_light_down_int_2_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_2_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_2_3"
+                app:layout_constraintTop_toBottomOf="@+id/int_1_4">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_2_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_2_4"
+                    android:layout_alignRight="@+id/tv_light_down_int_2_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_2_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_2_4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_2_4"
+                    android:layout_toRightOf="@+id/tv_light_left_int_2_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_2_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_2_4"
+                    android:layout_toRightOf="@+id/tv_light_down_int_2_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_2_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_2_1"
+                app:layout_constraintTop_toBottomOf="@+id/int_1_2">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_2_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_2_2"
+                    android:layout_alignRight="@+id/tv_light_down_int_2_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_2_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_2_2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_2_2"
+                    android:layout_toRightOf="@+id/tv_light_left_int_2_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_2_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_2_2"
+                    android:layout_toRightOf="@+id/tv_light_down_int_2_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_2_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_2_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/int_3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/int_2_1">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_3_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_3_1"
+                    android:layout_alignRight="@+id/tv_light_down_int_3_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_3_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_3_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_3_1"
+                    android:layout_toRightOf="@+id/tv_light_left_int_3_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_3_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_3_1"
+                    android:layout_toRightOf="@+id/tv_light_down_int_3_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_3_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_2_2"
+                app:layout_constraintTop_toBottomOf="@+id/int_2_3">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_3_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_3_3"
+                    android:layout_alignRight="@+id/tv_light_down_int_3_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_3_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_3_3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_3_3"
+                    android:layout_toRightOf="@+id/tv_light_left_int_3_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_3_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_3_3"
+                    android:layout_toRightOf="@+id/tv_light_down_int_3_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_3_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_3_3"
+                app:layout_constraintTop_toBottomOf="@+id/int_2_4">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_3_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_3_4"
+                    android:layout_alignRight="@+id/tv_light_down_int_3_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_3_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_3_4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_3_4"
+                    android:layout_toRightOf="@+id/tv_light_left_int_3_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_3_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_3_4"
+                    android:layout_toRightOf="@+id/tv_light_down_int_3_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_3_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_3_1"
+                app:layout_constraintTop_toBottomOf="@+id/int_2_2">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_3_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_3_2"
+                    android:layout_alignRight="@+id/tv_light_down_int_3_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_3_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_3_2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_3_2"
+                    android:layout_toRightOf="@+id/tv_light_left_int_3_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_3_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_3_2"
+                    android:layout_toRightOf="@+id/tv_light_down_int_3_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_3_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_3_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/int_4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/int_3_1">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_4_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_4_1"
+                    android:layout_alignRight="@+id/tv_light_down_int_4_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_4_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_4_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_4_1"
+                    android:layout_toRightOf="@+id/tv_light_left_int_4_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_4_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_4_1"
+                    android:layout_toRightOf="@+id/tv_light_down_int_4_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_4_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_3_2"
+                app:layout_constraintTop_toBottomOf="@+id/int_3_3">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_4_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_4_3"
+                    android:layout_alignRight="@+id/tv_light_down_int_4_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_4_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_4_3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_4_3"
+                    android:layout_toRightOf="@+id/tv_light_left_int_4_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_4_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_4_3"
+                    android:layout_toRightOf="@+id/tv_light_down_int_4_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_4_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_4_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_4_3"
+                app:layout_constraintTop_toBottomOf="@+id/int_3_4">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_4_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_4_4"
+                    android:layout_alignRight="@+id/tv_light_down_int_4_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_4_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_4_4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_4_4"
+                    android:layout_toRightOf="@+id/tv_light_left_int_4_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_4_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_4_4"
+                    android:layout_toRightOf="@+id/tv_light_down_int_4_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_4_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_4_1"
+                app:layout_constraintTop_toBottomOf="@+id/int_3_2">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_4_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_4_2"
+                    android:layout_alignRight="@+id/tv_light_down_int_4_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_4_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_4_2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_4_2"
+                    android:layout_toRightOf="@+id/tv_light_left_int_4_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_4_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_4_2"
+                    android:layout_toRightOf="@+id/tv_light_down_int_4_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_4_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_4_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/int_5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/int_4_1">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_5_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_5_1"
+                    android:layout_alignRight="@+id/tv_light_down_int_5_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_5_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_5_1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_5_1"
+                    android:layout_toRightOf="@+id/tv_light_left_int_5_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_5_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_5_1"
+                    android:layout_toRightOf="@+id/tv_light_down_int_5_1"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_5_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_4_2"
+                app:layout_constraintTop_toBottomOf="@+id/int_4_3">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_5_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_5_3"
+                    android:layout_alignRight="@+id/tv_light_down_int_5_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_5_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_5_3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_5_3"
+                    android:layout_toRightOf="@+id/tv_light_left_int_5_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_5_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_5_3"
+                    android:layout_toRightOf="@+id/tv_light_down_int_5_3"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_5_3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_5_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_5_3"
+                app:layout_constraintTop_toBottomOf="@+id/int_4_4">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_5_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_5_4"
+                    android:layout_alignRight="@+id/tv_light_down_int_5_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_5_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_5_4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_5_4"
+                    android:layout_toRightOf="@+id/tv_light_left_int_5_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_5_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_5_4"
+                    android:layout_toRightOf="@+id/tv_light_down_int_5_4"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_5_4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/int_5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toEndOf="@+id/int_5_1"
+                app:layout_constraintTop_toBottomOf="@+id/int_4_2">
+
+                <TextView
+                    android:id="@+id/tv_light_up_int_5_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignEnd="@+id/tv_light_down_int_5_2"
+                    android:layout_alignRight="@+id/tv_light_down_int_5_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_down_int_5_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_left_int_5_2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/tv_light_left_int_5_2"
+                    android:layout_toRightOf="@+id/tv_light_left_int_5_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_right_int_5_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/tv_light_down_int_5_2"
+                    android:layout_toRightOf="@+id/tv_light_down_int_5_2"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_light_left_int_5_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/tv_light_up_int_5_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_1_2"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_1_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_1_3"
-                android:layout_alignRight="@+id/tv_light_down_int_1_3"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_1_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_1_3"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_1_3"
-                android:layout_toRightOf="@+id/tv_light_left_int_1_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_1_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_3"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_1_3"
-                android:layout_toRightOf="@+id/tv_light_down_int_1_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_1_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_3"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_1_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_1_3"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_1_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_1_4"
-                android:layout_alignRight="@+id/tv_light_down_int_1_4"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_1_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_1_4"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_1_4"
-                android:layout_toRightOf="@+id/tv_light_left_int_1_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_1_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_4"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_1_4"
-                android:layout_toRightOf="@+id/tv_light_down_int_1_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_1_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_1_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_1_1"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_1_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_1_2"
-                android:layout_alignRight="@+id/tv_light_down_int_1_2"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_1_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_1_2"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_1_2"
-                android:layout_toRightOf="@+id/tv_light_left_int_1_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_1_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_2"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_1_2"
-                android:layout_toRightOf="@+id/tv_light_down_int_1_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_1_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_1_2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/int_2_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:text="UPDATE"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/int_1_1">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_2_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_2_1"
-                android:layout_alignRight="@+id/tv_light_down_int_2_1"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_2_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_2_1"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_2_1"
-                android:layout_toRightOf="@+id/tv_light_left_int_2_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_2_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_1"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_2_1"
-                android:layout_toRightOf="@+id/tv_light_down_int_2_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_2_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_2_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_1_2"
-            app:layout_constraintTop_toBottomOf="@+id/int_1_3">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_2_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_2_3"
-                android:layout_alignRight="@+id/tv_light_down_int_2_3"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_2_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_2_3"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_2_3"
-                android:layout_toRightOf="@+id/tv_light_left_int_2_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_2_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_3"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_2_3"
-                android:layout_toRightOf="@+id/tv_light_down_int_2_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_2_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_3"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_2_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_2_3"
-            app:layout_constraintTop_toBottomOf="@+id/int_1_4">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_2_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_2_4"
-                android:layout_alignRight="@+id/tv_light_down_int_2_4"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_2_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_2_4"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_2_4"
-                android:layout_toRightOf="@+id/tv_light_left_int_2_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_2_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_4"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_2_4"
-                android:layout_toRightOf="@+id/tv_light_down_int_2_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_2_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_2_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_2_1"
-            app:layout_constraintTop_toBottomOf="@+id/int_1_2">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_2_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_2_2"
-                android:layout_alignRight="@+id/tv_light_down_int_2_2"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_2_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_2_2"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_2_2"
-                android:layout_toRightOf="@+id/tv_light_left_int_2_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_2_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_2"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_2_2"
-                android:layout_toRightOf="@+id/tv_light_down_int_2_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_2_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_2_2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/int_3_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/int_2_1">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_3_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_3_1"
-                android:layout_alignRight="@+id/tv_light_down_int_3_1"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_3_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_3_1"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_3_1"
-                android:layout_toRightOf="@+id/tv_light_left_int_3_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_3_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_1"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_3_1"
-                android:layout_toRightOf="@+id/tv_light_down_int_3_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_3_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_3_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_2_2"
-            app:layout_constraintTop_toBottomOf="@+id/int_2_3">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_3_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_3_3"
-                android:layout_alignRight="@+id/tv_light_down_int_3_3"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_3_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_3_3"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_3_3"
-                android:layout_toRightOf="@+id/tv_light_left_int_3_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_3_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_3"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_3_3"
-                android:layout_toRightOf="@+id/tv_light_down_int_3_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_3_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_3"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_3_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_3_3"
-            app:layout_constraintTop_toBottomOf="@+id/int_2_4">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_3_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_3_4"
-                android:layout_alignRight="@+id/tv_light_down_int_3_4"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_3_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_3_4"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_3_4"
-                android:layout_toRightOf="@+id/tv_light_left_int_3_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_3_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_4"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_3_4"
-                android:layout_toRightOf="@+id/tv_light_down_int_3_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_3_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_3_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_3_1"
-            app:layout_constraintTop_toBottomOf="@+id/int_2_2">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_3_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_3_2"
-                android:layout_alignRight="@+id/tv_light_down_int_3_2"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_3_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_3_2"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_3_2"
-                android:layout_toRightOf="@+id/tv_light_left_int_3_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_3_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_2"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_3_2"
-                android:layout_toRightOf="@+id/tv_light_down_int_3_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_3_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_3_2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/int_4_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/int_3_1">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_4_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_4_1"
-                android:layout_alignRight="@+id/tv_light_down_int_4_1"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_4_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_4_1"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_4_1"
-                android:layout_toRightOf="@+id/tv_light_left_int_4_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_4_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_1"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_4_1"
-                android:layout_toRightOf="@+id/tv_light_down_int_4_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_4_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_4_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_3_2"
-            app:layout_constraintTop_toBottomOf="@+id/int_3_3">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_4_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_4_3"
-                android:layout_alignRight="@+id/tv_light_down_int_4_3"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_4_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_4_3"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_4_3"
-                android:layout_toRightOf="@+id/tv_light_left_int_4_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_4_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_3"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_4_3"
-                android:layout_toRightOf="@+id/tv_light_down_int_4_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_4_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_3"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_4_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_4_3"
-            app:layout_constraintTop_toBottomOf="@+id/int_3_4">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_4_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_4_4"
-                android:layout_alignRight="@+id/tv_light_down_int_4_4"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_4_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_4_4"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_4_4"
-                android:layout_toRightOf="@+id/tv_light_left_int_4_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_4_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_4"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_4_4"
-                android:layout_toRightOf="@+id/tv_light_down_int_4_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_4_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_4_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_4_1"
-            app:layout_constraintTop_toBottomOf="@+id/int_3_2">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_4_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_4_2"
-                android:layout_alignRight="@+id/tv_light_down_int_4_2"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_4_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_4_2"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_4_2"
-                android:layout_toRightOf="@+id/tv_light_left_int_4_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_4_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_2"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_4_2"
-                android:layout_toRightOf="@+id/tv_light_down_int_4_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_4_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_4_2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/int_5_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/int_4_1">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_5_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_5_1"
-                android:layout_alignRight="@+id/tv_light_down_int_5_1"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_5_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_5_1"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_5_1"
-                android:layout_toRightOf="@+id/tv_light_left_int_5_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_5_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_1"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_5_1"
-                android:layout_toRightOf="@+id/tv_light_down_int_5_1"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_5_1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_5_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_4_2"
-            app:layout_constraintTop_toBottomOf="@+id/int_4_3">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_5_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_5_3"
-                android:layout_alignRight="@+id/tv_light_down_int_5_3"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_5_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_5_3"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_5_3"
-                android:layout_toRightOf="@+id/tv_light_left_int_5_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_5_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_3"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_5_3"
-                android:layout_toRightOf="@+id/tv_light_down_int_5_3"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_5_3"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_3"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_5_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_5_3"
-            app:layout_constraintTop_toBottomOf="@+id/int_4_4">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_5_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_5_4"
-                android:layout_alignRight="@+id/tv_light_down_int_5_4"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_5_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_5_4"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_5_4"
-                android:layout_toRightOf="@+id/tv_light_left_int_5_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-
-            <TextView
-                android:id="@+id/tv_light_right_int_5_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_4"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_5_4"
-                android:layout_toRightOf="@+id/tv_light_down_int_5_4"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_5_4"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/int_5_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintStart_toEndOf="@+id/int_5_1"
-            app:layout_constraintTop_toBottomOf="@+id/int_4_2">
-
-            <TextView
-                android:id="@+id/tv_light_up_int_5_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignEnd="@+id/tv_light_down_int_5_2"
-                android:layout_alignRight="@+id/tv_light_down_int_5_2"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_down_int_5_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_left_int_5_2"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@+id/tv_light_left_int_5_2"
-                android:layout_toRightOf="@+id/tv_light_left_int_5_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_right_int_5_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_2"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="10dp"
-                android:layout_toEndOf="@+id/tv_light_down_int_5_2"
-                android:layout_toRightOf="@+id/tv_light_down_int_5_2"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/tv_light_left_int_5_2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_below="@+id/tv_light_up_int_5_2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/circle_red"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@android:color/white" />
-
-        </RelativeLayout>
-
-
+            app:layout_constraintTop_toBottomOf="@+id/root_road_map"
+            android:id="@+id/btn_update"/>
     </android.support.constraint.ConstraintLayout>
 </HorizontalScrollView>
