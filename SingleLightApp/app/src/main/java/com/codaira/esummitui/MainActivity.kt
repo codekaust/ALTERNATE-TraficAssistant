@@ -12,34 +12,28 @@ import kotlin.math.pow
 
 
 class MainActivity : AppCompatActivity() {
-    val controller = "p2"
-    val controllerNumber = 2-1
-    val tiebreaker = 2
+    val controller = "p4"
+    val controllerNumber = 4-1
+    val tiebreaker = 4
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<View>(R.id.imageButtonGreen).setBackgroundColor(Color.GRAY)
 
-        FirebaseDatabase.getInstance().reference.child("p1").setValue(TrafficFactors(controller = "p1",tieBreaker = 1, green = false))
-        FirebaseDatabase.getInstance().reference.child("p2").setValue(TrafficFactors(controller = "p2",tieBreaker = 2, green = false))
-        FirebaseDatabase.getInstance().reference.child("p3").setValue(TrafficFactors(controller = "p3",tieBreaker = 3, green = false))
-        FirebaseDatabase.getInstance().reference.child("p4").setValue(TrafficFactors(controller = "p4",tieBreaker = 4, green = false))
+        FirebaseDatabase.getInstance().reference.child("p2").setValue(TrafficFactors(controller = controller,tieBreaker = tiebreaker, green = false))
 
         val k = (log(15.0, E)) / 30
         var t: Int = 0
         var a = E.pow(k * (t - 30)).toInt()
 
-
-        //get number of cars from firebase and store in variable c, then update on firebase
-
+        1
         Timer().scheduleAtFixedRate(object : TimerTask() {
             override fun run() {
                 t += 5
                 a = E.pow(k * (t - 30)).toInt()
 
                 FirebaseDatabase.getInstance().reference.child(controller).child("age").setValue(a)
-                FirebaseDatabase.getInstance().reference.child(controller).child("cars").setValue((0..10).random())
             }
         }, 0, 5000)
 
@@ -119,6 +113,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+
 
 
 
