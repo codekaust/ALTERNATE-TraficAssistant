@@ -1,28 +1,25 @@
 package io.github.codekaust.cityprototype;
 
-//left up right bottom
+//up down right left
 
 import java.util.Random;
 
 public class Intersection {
 
-    private int c1, c2, c3, c4;
-//    public int dr[] = new int[4];
-//    private final int RED_LIGHT = R.drawable.circle_red;
-//    private final int GREEN_LIGHT = R.drawable.circle_green;
+    public int c1, c2, c3, c4;
+    public int i, j;
+    public boolean g1, g2, g3, g4;
 
-    Intersection() {
+    Intersection(int i, int j) {
         Random rn = new Random();
+        this.i = i;
+        this.j = j;
         this.c1 = rn.nextInt(25 - 2) + 2;
         this.c2 = rn.nextInt(25 - 2) + 2;
         this.c3 = rn.nextInt(25 - 2) + 2;
         this.c4 = rn.nextInt(25 - 2) + 2;
 
-//        for (int i=0; i<4; i++){
-//            dr[i]= RED_LIGHT;
-//        }
-//        dr[direcGreen()] = GREEN_LIGHT;
-
+        g1 = g2 = g3 = g4 = false;
     }
 
     public String getC1() {

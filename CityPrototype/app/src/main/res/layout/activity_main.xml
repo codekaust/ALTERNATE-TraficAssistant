@@ -144,7 +144,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][0].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][0].getC1}"
                     android:textColor="@android:color/white" />
@@ -160,7 +160,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_1_1"
                     android:layout_toRightOf="@+id/tv_light_left_int_1_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][0].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][0].getC2}"
                     android:textColor="@android:color/white" />
@@ -174,7 +174,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_1_1"
                     android:layout_toRightOf="@+id/tv_light_down_int_1_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][0].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][0].getC3}"
                     android:textColor="@android:color/white" />
@@ -189,7 +189,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][0].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][0].getC4}"
 
@@ -240,7 +240,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][2].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][2].getC1}"
                     android:textColor="@android:color/white" />
@@ -256,7 +256,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_1_3"
                     android:layout_toRightOf="@+id/tv_light_left_int_1_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][2].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][2].getC2}"
                     android:textColor="@android:color/white" />
@@ -270,7 +270,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_1_3"
                     android:layout_toRightOf="@+id/tv_light_down_int_1_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][2].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][2].getC3}"
 
@@ -286,7 +286,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][2].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][2].getC4}"
                     android:textColor="@android:color/white" />
@@ -334,7 +334,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][3].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][3].getC1}"
                     android:textColor="@android:color/white" />
@@ -350,7 +350,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_1_4"
                     android:layout_toRightOf="@+id/tv_light_left_int_1_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][3].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][3].getC2}"
                     android:textColor="@android:color/white" />
@@ -364,7 +364,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_1_4"
                     android:layout_toRightOf="@+id/tv_light_down_int_1_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][3].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][3].getC3}"
                     android:textColor="@android:color/white" />
@@ -379,7 +379,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][3].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][3].getC4}"
                     android:textColor="@android:color/white" />
@@ -427,7 +427,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][1].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][1].getC1}"
                     android:textColor="@android:color/white" />
@@ -443,7 +443,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_1_2"
                     android:layout_toRightOf="@+id/tv_light_left_int_1_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][1].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][1].getC2}"
                     android:textColor="@android:color/white" />
@@ -457,7 +457,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_1_2"
                     android:layout_toRightOf="@+id/tv_light_down_int_1_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][1].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][1].getC3}"
                     android:textColor="@android:color/white" />
@@ -472,7 +472,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[0][1].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[0][1].getC4}"
                     android:textColor="@android:color/white" />
@@ -521,7 +521,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][0].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][0].getC1}"
                     android:textColor="@android:color/white" />
@@ -537,7 +537,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_2_1"
                     android:layout_toRightOf="@+id/tv_light_left_int_2_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][0].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][0].getC2}"
                     android:textColor="@android:color/white" />
@@ -551,7 +551,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_2_1"
                     android:layout_toRightOf="@+id/tv_light_down_int_2_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][0].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][0].getC3}"
                     android:textColor="@android:color/white" />
@@ -566,7 +566,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][0].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][0].getC4}"
                     android:textColor="@android:color/white" />
@@ -614,7 +614,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][2].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][2].getC1}"
                     android:textColor="@android:color/white" />
@@ -630,7 +630,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_2_3"
                     android:layout_toRightOf="@+id/tv_light_left_int_2_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][2].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][2].getC2}"
                     android:textColor="@android:color/white" />
@@ -644,7 +644,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_2_3"
                     android:layout_toRightOf="@+id/tv_light_down_int_2_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][2].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][2].getC3}"
                     android:textColor="@android:color/white" />
@@ -659,7 +659,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][2].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][2].getC4}"
                     android:textColor="@android:color/white" />
@@ -707,7 +707,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][3].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][3].getC1}"
                     android:textColor="@android:color/white" />
@@ -723,7 +723,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_2_4"
                     android:layout_toRightOf="@+id/tv_light_left_int_2_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][3].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][3].getC2}"
                     android:textColor="@android:color/white" />
@@ -737,7 +737,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_2_4"
                     android:layout_toRightOf="@+id/tv_light_down_int_2_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][3].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][3].getC3}"
                     android:textColor="@android:color/white" />
@@ -752,7 +752,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][3].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][3].getC4}"
                     android:textColor="@android:color/white" />
@@ -800,7 +800,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][1].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][1].getC1}"
                     android:textColor="@android:color/white" />
@@ -816,7 +816,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_2_2"
                     android:layout_toRightOf="@+id/tv_light_left_int_2_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][1].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][1].getC2}"
                     android:textColor="@android:color/white" />
@@ -830,7 +830,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_2_2"
                     android:layout_toRightOf="@+id/tv_light_down_int_2_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][1].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][1].getC3}"
                     android:textColor="@android:color/white" />
@@ -845,7 +845,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[1][1].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[1][1].getC4}"
                     android:textColor="@android:color/white" />
@@ -895,7 +895,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][0].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][0].getC1}"
                     android:textColor="@android:color/white" />
@@ -910,7 +910,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_3_1"
                     android:layout_toRightOf="@+id/tv_light_left_int_3_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][0].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][0].getC2}"
                     android:textColor="@android:color/white" />
@@ -923,7 +923,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_3_1"
                     android:layout_toRightOf="@+id/tv_light_down_int_3_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][0].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][0].getC3}"
                     android:textColor="@android:color/white" />
@@ -937,7 +937,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][0].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][0].getC4}"
                     android:textColor="@android:color/white" />
@@ -984,7 +984,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][2].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][2].getC1}"
                     android:textColor="@android:color/white" />
@@ -999,7 +999,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_3_3"
                     android:layout_toRightOf="@+id/tv_light_left_int_3_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][2].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][2].getC2}"
                     android:textColor="@android:color/white" />
@@ -1012,7 +1012,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_3_3"
                     android:layout_toRightOf="@+id/tv_light_down_int_3_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][2].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][2].getC3}"
                     android:textColor="@android:color/white" />
@@ -1026,7 +1026,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][2].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][2].getC4}"
                     android:textColor="@android:color/white" />
@@ -1073,7 +1073,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][3].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][3].getC1}"
                     android:textColor="@android:color/white" />
@@ -1088,7 +1088,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_3_4"
                     android:layout_toRightOf="@+id/tv_light_left_int_3_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][3].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][3].getC2}"
                     android:textColor="@android:color/white" />
@@ -1101,7 +1101,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_3_4"
                     android:layout_toRightOf="@+id/tv_light_down_int_3_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][3].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][3].getC3}"
                     android:textColor="@android:color/white" />
@@ -1115,7 +1115,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][3].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][3].getC4}"
                     android:textColor="@android:color/white" />
@@ -1162,7 +1162,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][1].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][1].getC1}"
                     android:textColor="@android:color/white" />
@@ -1177,7 +1177,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_3_2"
                     android:layout_toRightOf="@+id/tv_light_left_int_3_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][1].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][1].getC2}"
                     android:textColor="@android:color/white" />
@@ -1190,7 +1190,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_3_2"
                     android:layout_toRightOf="@+id/tv_light_down_int_3_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][1].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][1].getC3}"
                     android:textColor="@android:color/white" />
@@ -1204,7 +1204,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[2][1].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[2][1].getC4}"
                     android:textColor="@android:color/white" />
@@ -1252,7 +1252,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][0].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][0].getC1}"
                     android:textColor="@android:color/white" />
@@ -1267,7 +1267,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_4_1"
                     android:layout_toRightOf="@+id/tv_light_left_int_4_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][0].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][0].getC2}"
                     android:textColor="@android:color/white" />
@@ -1280,7 +1280,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_4_1"
                     android:layout_toRightOf="@+id/tv_light_down_int_4_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][0].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][0].getC3}"
                     android:textColor="@android:color/white" />
@@ -1294,7 +1294,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][0].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][0].getC4}"
                     android:textColor="@android:color/white" />
@@ -1341,7 +1341,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][2].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][2].getC1}"
                     android:textColor="@android:color/white" />
@@ -1356,7 +1356,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_4_3"
                     android:layout_toRightOf="@+id/tv_light_left_int_4_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][2].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][2].getC2}"
                     android:textColor="@android:color/white" />
@@ -1369,7 +1369,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_4_3"
                     android:layout_toRightOf="@+id/tv_light_down_int_4_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][2].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][2].getC3}"
                     android:textColor="@android:color/white" />
@@ -1383,7 +1383,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][2].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][2].getC4}"
                     android:textColor="@android:color/white" />
@@ -1430,7 +1430,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][3].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][3].getC1}"
                     android:textColor="@android:color/white" />
@@ -1445,7 +1445,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_4_4"
                     android:layout_toRightOf="@+id/tv_light_left_int_4_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][3].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][3].getC2}"
                     android:textColor="@android:color/white" />
@@ -1458,7 +1458,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_4_4"
                     android:layout_toRightOf="@+id/tv_light_down_int_4_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][3].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][3].getC3}"
                     android:textColor="@android:color/white" />
@@ -1472,7 +1472,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][3].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][3].getC4}"
                     android:textColor="@android:color/white" />
@@ -1519,7 +1519,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][1].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][1].getC1}"
                     android:textColor="@android:color/white" />
@@ -1534,7 +1534,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_4_2"
                     android:layout_toRightOf="@+id/tv_light_left_int_4_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][1].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][1].getC2}"
                     android:textColor="@android:color/white" />
@@ -1547,7 +1547,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_4_2"
                     android:layout_toRightOf="@+id/tv_light_down_int_4_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][1].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][1].getC3}"
                     android:textColor="@android:color/white" />
@@ -1561,7 +1561,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[3][1].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[3][1].getC4}"
                     android:textColor="@android:color/white" />
@@ -1608,7 +1608,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][0].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][0].getC1}"
                     android:textColor="@android:color/white" />
@@ -1623,7 +1623,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_5_1"
                     android:layout_toRightOf="@+id/tv_light_left_int_5_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][0].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][0].getC2}"
                     android:textColor="@android:color/white" />
@@ -1636,7 +1636,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_5_1"
                     android:layout_toRightOf="@+id/tv_light_down_int_5_1"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][0].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][0].getC3}"
                     android:textColor="@android:color/white" />
@@ -1650,7 +1650,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][0].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][0].getC4}"
                     android:textColor="@android:color/white" />
@@ -1697,7 +1697,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][2].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][2].getC1}"
                     android:textColor="@android:color/white" />
@@ -1712,7 +1712,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_5_3"
                     android:layout_toRightOf="@+id/tv_light_left_int_5_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][2].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][2].getC2}"
                     android:textColor="@android:color/white" />
@@ -1725,7 +1725,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_5_3"
                     android:layout_toRightOf="@+id/tv_light_down_int_5_3"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][2].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][2].getC3}"
                     android:textColor="@android:color/white" />
@@ -1739,7 +1739,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][2].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][2].getC4}"
                     android:textColor="@android:color/white" />
@@ -1786,7 +1786,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][3].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][3].getC1}"
                     android:textColor="@android:color/white" />
@@ -1801,7 +1801,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_5_4"
                     android:layout_toRightOf="@+id/tv_light_left_int_5_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][3].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][3].getC2}"
                     android:textColor="@android:color/white" />
@@ -1814,7 +1814,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_5_4"
                     android:layout_toRightOf="@+id/tv_light_down_int_5_4"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][3].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][3].getC3}"
                     android:textColor="@android:color/white" />
@@ -1828,7 +1828,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][3].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][3].getC4}"
                     android:textColor="@android:color/white" />
@@ -1875,7 +1875,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][1].g1 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][1].getC1}"
                     android:textColor="@android:color/white" />
@@ -1890,7 +1890,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@+id/tv_light_left_int_5_2"
                     android:layout_toRightOf="@+id/tv_light_left_int_5_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][1].g2 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][1].getC2}"
                     android:textColor="@android:color/white" />
@@ -1903,7 +1903,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_toEndOf="@+id/tv_light_down_int_5_2"
                     android:layout_toRightOf="@+id/tv_light_down_int_5_2"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][1].g3 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][1].getC3}"
                     android:textColor="@android:color/white" />
@@ -1917,7 +1917,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/circle_red"
+                    android:background="@{matrix[4][1].g4 ? @drawable/circle_green : @drawable/circle_red }"
                     android:gravity="center"
                     android:text="@{matrix[4][1].getC4}"
                     android:textColor="@android:color/white" />
