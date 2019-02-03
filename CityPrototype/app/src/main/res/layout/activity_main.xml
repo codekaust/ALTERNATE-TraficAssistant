@@ -105,10 +105,34 @@
             <RelativeLayout
                 android:id="@+id/int_1_1"
                 android:layout_width="93dp"
-                android:layout_height="wrap_content"
+                android:layout_height="93dp"
                 android:layout_alignParentTop="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_1_1"
@@ -177,11 +201,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_1_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_1_2"
                 app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_1_3"
@@ -248,11 +295,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_1_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_1_3"
                 app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_1_4"
@@ -318,11 +388,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_1_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_1_1"
                 app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_1_2"
@@ -389,10 +482,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_2_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_1_1">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_2_1"
@@ -458,11 +575,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_2_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_1_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_1_3">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_2_3"
@@ -528,11 +668,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_2_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_2_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_1_4">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_2_4"
@@ -598,11 +761,34 @@
 
             <RelativeLayout
                 android:id="@+id/int_2_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_2_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_1_2">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
 
                 <TextView
                     android:id="@+id/tv_light_up_int_2_2"
@@ -670,10 +856,35 @@
 
             <RelativeLayout
                 android:id="@+id/int_3_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_2_1">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+
                 <TextView
                     android:id="@+id/tv_light_up_int_3_1"
                     android:layout_width="25dp"
@@ -731,12 +942,38 @@
                     android:text="@{matrix[2][0].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/int_3_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_2_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_2_3">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+
                 <TextView
                     android:id="@+id/tv_light_up_int_3_3"
                     android:layout_width="25dp"
@@ -794,12 +1031,38 @@
                     android:text="@{matrix[2][2].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/int_3_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_3_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_2_4">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+
                 <TextView
                     android:id="@+id/tv_light_up_int_3_4"
                     android:layout_width="25dp"
@@ -857,12 +1120,38 @@
                     android:text="@{matrix[2][3].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/int_3_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_3_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_2_2">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+
                 <TextView
                     android:id="@+id/tv_light_up_int_3_2"
                     android:layout_width="25dp"
@@ -922,14 +1211,37 @@
             </RelativeLayout>
 
 
-
-
             <RelativeLayout
                 android:id="@+id/int_4_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_3_1">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+
                 <TextView
                     android:id="@+id/tv_light_up_int_4_1"
                     android:layout_width="25dp"
@@ -987,12 +1299,38 @@
                     android:text="@{matrix[3][0].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+            
             <RelativeLayout
                 android:id="@+id/int_4_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_3_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_3_3">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_4_3"
                     android:layout_width="25dp"
@@ -1050,12 +1388,38 @@
                     android:text="@{matrix[3][2].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+            
             <RelativeLayout
                 android:id="@+id/int_4_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_4_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_3_4">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_4_4"
                     android:layout_width="25dp"
@@ -1113,12 +1477,38 @@
                     android:text="@{matrix[3][3].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/int_4_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_4_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_3_2">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_4_2"
                     android:layout_width="25dp"
@@ -1177,15 +1567,37 @@
                     android:textColor="@android:color/white" />
             </RelativeLayout>
 
-
-
-
             <RelativeLayout
                 android:id="@+id/int_5_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/int_4_1">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_5_1"
                     android:layout_width="25dp"
@@ -1243,12 +1655,38 @@
                     android:text="@{matrix[4][0].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+            
             <RelativeLayout
                 android:id="@+id/int_5_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_4_2"
                 app:layout_constraintTop_toBottomOf="@+id/int_4_3">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_5_3"
                     android:layout_width="25dp"
@@ -1306,12 +1744,38 @@
                     android:text="@{matrix[4][2].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+            
             <RelativeLayout
                 android:id="@+id/int_5_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_5_3"
                 app:layout_constraintTop_toBottomOf="@+id/int_4_4">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_5_4"
                     android:layout_width="25dp"
@@ -1369,12 +1833,38 @@
                     android:text="@{matrix[4][3].getC4}"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+            
             <RelativeLayout
                 android:id="@+id/int_5_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 app:layout_constraintStart_toEndOf="@+id/int_5_1"
                 app:layout_constraintTop_toBottomOf="@+id/int_4_2">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentStart="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentTop="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="93dp"
+                    android:background="@android:color/black"
+                    android:layout_alignParentEnd="true"/>
+                
                 <TextView
                     android:id="@+id/tv_light_up_int_5_2"
                     android:layout_width="25dp"
