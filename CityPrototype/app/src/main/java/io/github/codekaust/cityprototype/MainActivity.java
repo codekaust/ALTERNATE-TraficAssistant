@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import io.github.codekaust.cityprototype.databinding.ActivityMainBinding;
 
@@ -66,6 +67,15 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
+                for(int i=0; i<5; i++){
+                    for(int j =0; j<4; j++){
+                        cityMatrix.matrix[i][j].g1 = false;
+                        cityMatrix.matrix[i][j].g2 = false;
+                        cityMatrix.matrix[i][j].g3 = false;
+                        cityMatrix.matrix[i][j].g4 = false;
+                    }
+                }
+
                 for (int i = 1; i < paths[minWeightedPath].pathMembers.length; i++) {
                     if (paths[minWeightedPath].pathMembers[i].i < paths[minWeightedPath].pathMembers[i - 1].i) {
                         cityMatrix.matrix[paths[minWeightedPath].pathMembers[i].i][paths[minWeightedPath].pathMembers[i].j].g2 = true;
@@ -74,14 +84,19 @@ public class MainActivity extends AppCompatActivity {
                         cityMatrix.matrix[paths[minWeightedPath].pathMembers[i].i][paths[minWeightedPath].pathMembers[i].j].g1 = true;
                     }
                     if (paths[minWeightedPath].pathMembers[i].j < paths[minWeightedPath].pathMembers[i - 1].j) {
-                        cityMatrix.matrix[paths[minWeightedPath].pathMembers[i].i][paths[minWeightedPath].pathMembers[i].j].g4 = true;
-                    }
-                    if (paths[minWeightedPath].pathMembers[i].j < paths[minWeightedPath].pathMembers[i - 1].j) {
                         cityMatrix.matrix[paths[minWeightedPath].pathMembers[i].i][paths[minWeightedPath].pathMembers[i].j].g3 = true;
+                    }
+                    if (paths[minWeightedPath].pathMembers[i].j > paths[minWeightedPath].pathMembers[i - 1].j) {
+                        cityMatrix.matrix[paths[minWeightedPath].pathMembers[i].i][paths[minWeightedPath].pathMembers[i].j].g4 = true;
                     }
                 }
 
                 binding.setMatrix(cityMatrix.getMatrix());
+
+                for(int i=0; i<paths[minWeightedPath].pathMembers.length;i++){
+                    Toast.makeText(MainActivity.this,String.valueOf(paths[minWeightedPath].pathMembers[i].i)+String.valueOf(paths[minWeightedPath].pathMembers[i].j) ,Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
 
